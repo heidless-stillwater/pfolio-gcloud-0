@@ -12,8 +12,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 print("****************************")
 print("****** SETTINGS ***********")
 print("BASE_DIR:", BASE_DIR)
-print("SECRET_KEY:", env('SECRET_KEY'))
-print("DEBUG:", env('DEBUG'))
+#print("SECRET_KEY:", env('SECRET_KEY'))
+#print("DEBUG:", env('DEBUG'))
 print("****************************")
 print("****************************")
 
@@ -22,7 +22,7 @@ SECRET_KEY = 't1Y1qxEtR7mmC0z43TA9Zj399xjx'
 #SECRET_KEY = env('SECRET_KEY')
 
 
-print("DEBUG::", env('DEBUG'))
+#print("DEBUG::", env('DEBUG'))
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = bool(int(os.environ.get('DEBUG',0)))
@@ -180,9 +180,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+print("FRONTEND_URL:", env('FRONTEND_URL'))
 
 CORS_ALLOWED_ORIGINS = [
-    env('FRONTEND_URL'),
+    'http://frontend:3000',
+#    env('FRONTEND_URL'),
 ]
  
 FILE_UPLOAD_PERMISSIONS=0o640
