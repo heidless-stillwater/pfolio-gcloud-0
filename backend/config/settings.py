@@ -18,7 +18,9 @@ print("****************************")
 print("****************************")
 
 
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = 't1Y1qxEtR7mmC0z43TA9Zj399xjx'
+#SECRET_KEY = env('SECRET_KEY')
+
 
 print("DEBUG::", env('DEBUG'))
 
