@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     'backend',
     'localhost',
     '127.0.0.1',
+    '34.105.139.229',
     '*',
 ]
 
