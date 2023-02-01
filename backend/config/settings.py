@@ -180,7 +180,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-print("FRONTEND_URL:", env('FRONTEND_URL'))
+#print("FRONTEND_URL:", env('FRONTEND_URL'))
 
 CORS_ALLOWED_ORIGINS = [
     'http://frontend:3000',
